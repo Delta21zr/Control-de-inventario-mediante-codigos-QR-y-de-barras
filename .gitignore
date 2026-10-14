@@ -1,0 +1,25 @@
+# Node / Ionic / Angular
+node_modules/
+.angular/
+dist/
+www/
+
+# Android build outputs
+android/app/build/
+android/.gradle/
+*.apk
+*.aab
+
+# Local backend credentials / temp
+backend/config.php
+*.log
+
+# Material base docente comprimido o temporal
+metricas proyectos/
+*.docx
+
+# IDE / OS
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
