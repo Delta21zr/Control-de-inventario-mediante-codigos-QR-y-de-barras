@@ -1,0 +1,620 @@
+[
+  {
+    "origen": ".editorconfig",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/.editorconfig",
+    "bytes": 130,
+    "sha256": "fa923dc8387c1652b141e70cc007e7a28b76ea71fe5dece8ed257a616a530040"
+  },
+  {
+    "origen": ".gitignore",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/.gitignore",
+    "bytes": 64,
+    "sha256": "afec2f21851632613ec2bc408f656056c19fbc4e39bb1f03ef2677106d939ea2"
+  },
+  {
+    "origen": "android/.gitignore",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/.gitignore",
+    "bytes": 1824,
+    "sha256": "065e4a92a240fe11a0ea230491ad9dabef143f5fd5a3e6884ad6f0395666a971"
+  },
+  {
+    "origen": "android/app/.gitignore",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/.gitignore",
+    "bytes": 26,
+    "sha256": "99c54e51ee601a60fbde8016b2cbf717483bc2e92773be86c9247d02a7fa6ea4"
+  },
+  {
+    "origen": "android/app/build.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/build.gradle",
+    "bytes": 2144,
+    "sha256": "d0951e40657beac191c8fac5323d891a9af574a2db09532631325a324776caba"
+  },
+  {
+    "origen": "android/app/capacitor.build.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/capacitor.build.gradle",
+    "bytes": 474,
+    "sha256": "77d9d4e024c968347431437817aef2d504d901e684aae2ee8ce55b4eb0ec56e4"
+  },
+  {
+    "origen": "android/app/proguard-rules.pro",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/proguard-rules.pro",
+    "bytes": 751,
+    "sha256": "1cf8c57e8f79c250b0af9c1a5a4edad71a5c348a79ab70243b6bae086c150ad2"
+  },
+  {
+    "origen": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+    "bytes": 774,
+    "sha256": "ff50b4c110a7434312f9af54171f9e8523b015836f707c9b387b76d4c38a97f8"
+  },
+  {
+    "origen": "android/app/src/main/AndroidManifest.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/AndroidManifest.xml",
+    "bytes": 1647,
+    "sha256": "d0f77742b0145ed0799a0acca5cf2794a480ff7232f8be7afd87465ed2e10ee5"
+  },
+  {
+    "origen": "android/app/src/main/java/com/example/ionicngmodules/MainActivity.java",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/java/com/example/ionicngmodules/MainActivity.java",
+    "bytes": 130,
+    "sha256": "5b2e62306c174ef349de004bd06821c68c82b775d58add56f4f3d3d8260a2fa7"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable/ic_launcher_background.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable/ic_launcher_background.xml",
+    "bytes": 5606,
+    "sha256": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable/splash.png",
+    "bytes": 4040,
+    "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-land-hdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-land-hdpi/splash.png",
+    "bytes": 7705,
+    "sha256": "08cc34ad7713fe7ed58bceaa37b2387b670c53cd60264b4bd6442db3098e75dc"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-land-mdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-land-mdpi/splash.png",
+    "bytes": 4040,
+    "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-land-xhdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-land-xhdpi/splash.png",
+    "bytes": 9251,
+    "sha256": "22f87e1e3bc89aa01a7dbc39c9a4db058cd0bf4ad3fe9f55712bf69eb997f4bf"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+    "bytes": 13984,
+    "sha256": "42aa26392546fcdee1b8d3ac6d4b41bfcceb41dc6a4f3a3c30c24a8a8f4db862"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+    "bytes": 17683,
+    "sha256": "60393ce8636fd263e4e1fea3fd4ab2de948c6295e898fda9b50ac4e5283be809"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-port-hdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-port-hdpi/splash.png",
+    "bytes": 7934,
+    "sha256": "c5015f4ba3628392b538386c5e210f0b94f352a3160adab934fd0311972137ca"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-port-mdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-port-mdpi/splash.png",
+    "bytes": 4096,
+    "sha256": "07fa579e1c83e04ba7f9cbcbfcf41b68e15fe3638f2c44a04e58b809103e6b69"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-port-xhdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-port-xhdpi/splash.png",
+    "bytes": 9875,
+    "sha256": "b73049cb37fe76d6c11b87a796766bf6af0c85483b31eb6a921657b0d764a4b9"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+    "bytes": 13346,
+    "sha256": "0c7f1212f25b7b90e9a6e1d320013e4ff3d3e03e634cbb07b7b7981cac51627f"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+    "bytes": 17489,
+    "sha256": "3db071a03b2f8ffe0dfd4170fc59842d53cd15bba5e88af59401d58efabf7827"
+  },
+  {
+    "origen": "android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+    "bytes": 1880,
+    "sha256": "a8514094f754b099d3e55ce1d6e0b2de79db418b2eeacb0fc2a6bb0bfadef221"
+  },
+  {
+    "origen": "android/app/src/main/res/layout/activity_main.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/layout/activity_main.xml",
+    "bytes": 535,
+    "sha256": "5d770feb791313b947020cbfc57e5c733c556dac5e9e49261a1190e527073253"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "bytes": 265,
+    "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+    "bytes": 265,
+    "sha256": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "bytes": 2786,
+    "sha256": "72b71c3581ca3b5a23b1c168d69b9d855b3f184fa079902a01f088eb4f0607d5"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+    "bytes": 3450,
+    "sha256": "32baa10d2632a4417454a579f992bd640e0a3cec79321423559b2c9940de58a9"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "bytes": 4341,
+    "sha256": "bfcc1b0fa931b14bb241372c76ab4f04374b67d02363c98d9cb12edfdacdf5f3"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+    "bytes": 1869,
+    "sha256": "27ed3603010ebc278f64f8645741ab132ff517abb5308eb9df6c8e42a48956b2"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+    "bytes": 2110,
+    "sha256": "58e78a618778926b1f6d9472a6468de878de8530970934e94aab5ba4ba08cc00"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+    "bytes": 2725,
+    "sha256": "0166fc333074c373fbd0ce6b5defd71552166165ac778121ca9c9dff6b83f0fc"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+    "bytes": 3981,
+    "sha256": "d35dbfff175b83c13ef59cf924abfc810f7b6a158595d7417c5498ea8c7c7ed1"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+    "bytes": 5036,
+    "sha256": "6f88083b8166cc559102f7044688de7525287632ebe09ac45d001ac8bf4b3eae"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+    "bytes": 6593,
+    "sha256": "40911a00922868686854a4804b93fd6e56b503664696de03f450bff690affb6d"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+    "bytes": 6644,
+    "sha256": "ed346eb1e3f0280f15709393705899b3ff55c20b88f4e0308006b3c33cf5fe14"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "bytes": 9793,
+    "sha256": "4a82bc1e9923576275869998925ce0ae021a79aa18b24a0dd87ad6b61ca85053"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+    "bytes": 10455,
+    "sha256": "1ee4cd9ff371dcb2e3938097e434f6fb8731688ed7165e61fc63693ad5b2f455"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "bytes": 9441,
+    "sha256": "87cb2f2ffe992652bb4fa768c73719a37b5852ab17fbf8e170e888f7a42b0761"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "bytes": 15529,
+    "sha256": "bd24fd383253bf8d43f0a81f11c071d76d1d555114376dd647cd9fb38fa0a9da"
+  },
+  {
+    "origen": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+    "bytes": 15916,
+    "sha256": "ab93096331e7cd8ec379f73f1e9adcaaa9ee1115c9f4ff10411a811fb9700174"
+  },
+  {
+    "origen": "android/app/src/main/res/values/ic_launcher_background.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/values/ic_launcher_background.xml",
+    "bytes": 120,
+    "sha256": "cd40bafe618ff506f4088778b135cb4faa15f25e0c9b475e22d730c74b7be115"
+  },
+  {
+    "origen": "android/app/src/main/res/values/strings.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/values/strings.xml",
+    "bytes": 322,
+    "sha256": "3e7e5e099c958e597f61fd53c6150282fb12cad4ccfd7d824ff010e808c575ec"
+  },
+  {
+    "origen": "android/app/src/main/res/values/styles.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/values/styles.xml",
+    "bytes": 823,
+    "sha256": "18ebba36575e9461347ee67361b23caf095f158ee85dbefe1b83a4669ba5bd6c"
+  },
+  {
+    "origen": "android/app/src/main/res/xml/config.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/xml/config.xml",
+    "bytes": 185,
+    "sha256": "e9dcda493e663c5c4db9e3cb3bd968477a6e90aa8840bcbba40d72ed54b767ce"
+  },
+  {
+    "origen": "android/app/src/main/res/xml/file_paths.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/main/res/xml/file_paths.xml",
+    "bytes": 213,
+    "sha256": "a46ed43ef65c90cb6778f4581decf3556e3f0055aad8f36d69dae16f9a0e99aa"
+  },
+  {
+    "origen": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+    "bytes": 402,
+    "sha256": "d4045ae8fac1f0807e6b24eb34e68409a9a235df9d1a3f896fb8c9a49424363d"
+  },
+  {
+    "origen": "android/build.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/build.gradle",
+    "bytes": 636,
+    "sha256": "9c4d6e6418d24f903a6d8710a3d829acbf4dbd14959a6617643f5e03f5bd53ae"
+  },
+  {
+    "origen": "android/capacitor-cordova-android-plugins/build.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/capacitor-cordova-android-plugins/build.gradle",
+    "bytes": 1661,
+    "sha256": "8f5cea7b546643b388fc1f3a83633cc12657fea59fec8ae19d76253cb6c13cc1"
+  },
+  {
+    "origen": "android/capacitor-cordova-android-plugins/cordova.variables.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/capacitor-cordova-android-plugins/cordova.variables.gradle",
+    "bytes": 312,
+    "sha256": "268844885a8d04cf34044ffbe362499ca14836fd1123d05e64f94b12798a8bb9"
+  },
+  {
+    "origen": "android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml",
+    "bytes": 210,
+    "sha256": "2e3e383475f0e6cb76f0a7b46017a546663fba8e5bd1ef2a537412afac2ee9b5"
+  },
+  {
+    "origen": "android/capacitor-cordova-android-plugins/src/main/java/.gitkeep",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/capacitor-cordova-android-plugins/src/main/java/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "origen": "android/capacitor-cordova-android-plugins/src/main/res/.gitkeep",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/capacitor-cordova-android-plugins/src/main/res/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "origen": "android/capacitor.settings.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/capacitor.settings.gradle",
+    "bytes": 484,
+    "sha256": "8486401187983eec09f2b0dfdf9e3bb6dba05852c52bb5c42d3401ca531a399e"
+  },
+  {
+    "origen": "android/gradle/wrapper/gradle-wrapper.jar",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/gradle/wrapper/gradle-wrapper.jar",
+    "bytes": 43583,
+    "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+  },
+  {
+    "origen": "android/gradle/wrapper/gradle-wrapper.properties",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/gradle/wrapper/gradle-wrapper.properties",
+    "bytes": 253,
+    "sha256": "f7fafb1ddd0a2a1d2ef01ead773d9a88c1f889ef341e4e93c09c0724ade79b32"
+  },
+  {
+    "origen": "android/gradle.properties",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/gradle.properties",
+    "bytes": 987,
+    "sha256": "3bab15c5b8bc4c2f4b6cf525497d15ad4abca53a460e6dd2eb0f0135817d31e6"
+  },
+  {
+    "origen": "android/gradlew",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/gradlew",
+    "bytes": 8762,
+    "sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3"
+  },
+  {
+    "origen": "android/gradlew.bat",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/gradlew.bat",
+    "bytes": 2966,
+    "sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f"
+  },
+  {
+    "origen": "android/settings.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/settings.gradle",
+    "bytes": 208,
+    "sha256": "6ce098d15ebd69b44c4ecd786bca1bdc366340d2459b2af4d7bb0ab317aa9669"
+  },
+  {
+    "origen": "android/variables.gradle",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/android/variables.gradle",
+    "bytes": 497,
+    "sha256": "6887e37f43f1d6f08faec29cb8425ceaefc554107a79021777f5fe9217bf477c"
+  },
+  {
+    "origen": "angular.json",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/angular.json",
+    "bytes": 2656,
+    "sha256": "5848cc6379f877e60dcb700cf4bd2a5c3bfa6a346315397cd3a26a75b4e60c2a"
+  },
+  {
+    "origen": "capacitor.config.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/capacitor.config.ts",
+    "bytes": 201,
+    "sha256": "2c3dae7a27909b929053b0ea43951d9537764eec76f906297b1b1cc59625f850"
+  },
+  {
+    "origen": "ionic.config.json",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/ionic.config.json",
+    "bytes": 98,
+    "sha256": "3944c356e3fad8d12d5ef31cdfd71642b73b5b82ff5a32cf3924e86109e4bb6b"
+  },
+  {
+    "origen": "package-lock.json",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/package-lock.json",
+    "bytes": 300333,
+    "sha256": "c9725610d7c4710d2a8f87a56d0abcefdffadcf38b65e12cbd3b79080a354d2e"
+  },
+  {
+    "origen": "package.json",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/package.json",
+    "bytes": 1103,
+    "sha256": "e6d090937dcb112ce33c94ec347e531e854bd50e3ea0e730aadf9ec47c625622"
+  },
+  {
+    "origen": "README.md",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/README.md",
+    "bytes": 2876,
+    "sha256": "6e8f1b5edd376e41dd7276105276e3a33cf1d9a186959e6e408858538baf9e5a"
+  },
+  {
+    "origen": "src/app/app-routing.module.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/app-routing.module.ts",
+    "bytes": 526,
+    "sha256": "51f4f63c99cedc46c99c31491c204ef1d2cf74112bc38e6647a14cf0531c5963"
+  },
+  {
+    "origen": "src/app/app.component.html",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/app.component.html",
+    "bytes": 59,
+    "sha256": "75ab8938ab4807f11a739135cb791391ad95fed2ad0bc351b4e3ddcced1b0c43"
+  },
+  {
+    "origen": "src/app/app.component.scss",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/app.component.scss",
+    "bytes": 26,
+    "sha256": "70674394241531ed42f8e6d71c8b671784954d57e010f7ab22a17f69d953fc81"
+  },
+  {
+    "origen": "src/app/app.component.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/app.component.ts",
+    "bytes": 211,
+    "sha256": "d59c8d5e6762f326e2c0232d4a4608feb17ef62b2000f192bc7540b32fd53a8f"
+  },
+  {
+    "origen": "src/app/app.module.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/app.module.ts",
+    "bytes": 668,
+    "sha256": "d5408c2bac3b7232a044874d8a568e91e69cdd4d461d1b39e160cb6e5e7c32d8"
+  },
+  {
+    "origen": "src/app/core/models/.gitkeep",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/core/models/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "origen": "src/app/core/services/.gitkeep",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/core/services/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "origen": "src/app/core/services/scanner.service.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/core/services/scanner.service.ts",
+    "bytes": 4184,
+    "sha256": "b4b35a1591bccfa510cbea99127e8daa0c5bf3cc3778a73efe576c2f18bad344"
+  },
+  {
+    "origen": "src/app/models/api-response.model.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/models/api-response.model.ts",
+    "bytes": 89,
+    "sha256": "729e27d964f82328e3fbb2aaa0389f17749ca613fb897e808d60976f0e3956e7"
+  },
+  {
+    "origen": "src/app/models/movimiento.model.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/models/movimiento.model.ts",
+    "bytes": 286,
+    "sha256": "a67c150eb451bb3a4936fd84fa05cfb6374b9a7e6f57b9d9c6b16809557d23b5"
+  },
+  {
+    "origen": "src/app/models/producto.model.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/models/producto.model.ts",
+    "bytes": 101,
+    "sha256": "0925ae76ddaab942fbf7ef6c701398d618a5ed5d02341ff6a3bfbfa5d8af28b4"
+  },
+  {
+    "origen": "src/app/pages/inicio/inicio-routing.module.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/pages/inicio/inicio-routing.module.ts",
+    "bytes": 325,
+    "sha256": "2109131c674c9f87d924bde23134658214f761f4a2b28ef72a367da539f9fa05"
+  },
+  {
+    "origen": "src/app/pages/inicio/inicio.module.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/pages/inicio/inicio.module.ts",
+    "bytes": 449,
+    "sha256": "d724ddb42eb3e9eed9d85b30f9b7a6aedfb08e609d96d6dd7291b271a33d888b"
+  },
+  {
+    "origen": "src/app/pages/inicio/inicio.page.html",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/pages/inicio/inicio.page.html",
+    "bytes": 820,
+    "sha256": "384bef5bb2666cd00706a38923b5885597c4499526c2e7cae99771fd734e93f5"
+  },
+  {
+    "origen": "src/app/pages/inicio/inicio.page.scss",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/pages/inicio/inicio.page.scss",
+    "bytes": 164,
+    "sha256": "6e322d57066775b1adf469e29e13071cc4ee28f2ea194ff29f98a759e7200a76"
+  },
+  {
+    "origen": "src/app/pages/inicio/inicio.page.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/pages/inicio/inicio.page.ts",
+    "bytes": 358,
+    "sha256": "daec0fe71bd073619a33197f3fdb57643dcfe712eed61d2f74365329af25e797"
+  },
+  {
+    "origen": "src/app/shared/components/.gitkeep",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/app/shared/components/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "origen": "src/assets/.gitkeep",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/assets/.gitkeep",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "origen": "src/global.scss",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/global.scss",
+    "bytes": 542,
+    "sha256": "b6a97cb15660e4b12ecb9ce722f14198c674fb9d4b603f7711e6562bf5a1be1a"
+  },
+  {
+    "origen": "src/index.html",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/index.html",
+    "bytes": 303,
+    "sha256": "e160638fcae703d7423b58e702af9deabe8e7136b109abc4d7805735506a9fce"
+  },
+  {
+    "origen": "src/main.ts",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/main.ts",
+    "bytes": 212,
+    "sha256": "62bd93f0f508782f1b9ae8fbb209d3eeb7012a255e1b243abb6ed2804f6998e4"
+  },
+  {
+    "origen": "src/theme/variables.scss",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/src/theme/variables.scss",
+    "bytes": 230,
+    "sha256": "38e56f0e4b74a5732a0e894d121d4e99cd77ce20c558ed002c00006368e4c9ab"
+  },
+  {
+    "origen": "tsconfig.app.json",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/tsconfig.app.json",
+    "bytes": 186,
+    "sha256": "caa84e8abdba5afa155da8dc22276ae5144efe50508f6c346ecf99e7ad5015f3"
+  },
+  {
+    "origen": "tsconfig.json",
+    "destino": "00_Proyecto_Completo/ionic-ngmodules/tsconfig.json",
+    "bytes": 783,
+    "sha256": "a258efab76289598c6120bfc3f050dec0c0eca280d666261fc910a56f82fdf97"
+  },
+  {
+    "origen": "src/app/core/services/scanner.service.ts",
+    "destino": "Tarea_1_Actividad_6_Escaner/src/app/core/services/scanner.service.ts",
+    "bytes": 4184,
+    "sha256": "b4b35a1591bccfa510cbea99127e8daa0c5bf3cc3778a73efe576c2f18bad344"
+  },
+  {
+    "origen": "src/global.scss",
+    "destino": "Tarea_1_Actividad_6_Escaner/src/global.scss",
+    "bytes": 542,
+    "sha256": "b6a97cb15660e4b12ecb9ce722f14198c674fb9d4b603f7711e6562bf5a1be1a"
+  },
+  {
+    "origen": "android/variables.gradle",
+    "destino": "Tarea_2_Actividad_5_Android/android/variables.gradle",
+    "bytes": 497,
+    "sha256": "6887e37f43f1d6f08faec29cb8425ceaefc554107a79021777f5fe9217bf477c"
+  },
+  {
+    "origen": "android/app/src/main/AndroidManifest.xml",
+    "destino": "Tarea_2_Actividad_5_Android/android/app/src/main/AndroidManifest.xml",
+    "bytes": 1647,
+    "sha256": "d0f77742b0145ed0799a0acca5cf2794a480ff7232f8be7afd87465ed2e10ee5"
+  },
+  {
+    "origen": "android/app/build.gradle",
+    "destino": "Tarea_2_Actividad_5_Android/android/app/build.gradle",
+    "bytes": 2144,
+    "sha256": "d0951e40657beac191c8fac5323d891a9af574a2db09532631325a324776caba"
+  },
+  {
+    "origen": "android/build.gradle",
+    "destino": "Tarea_2_Actividad_5_Android/android/build.gradle",
+    "bytes": 636,
+    "sha256": "9c4d6e6418d24f903a6d8710a3d829acbf4dbd14959a6617643f5e03f5bd53ae"
+  },
+  {
+    "origen": "android/settings.gradle",
+    "destino": "Tarea_2_Actividad_5_Android/android/settings.gradle",
+    "bytes": 208,
+    "sha256": "6ce098d15ebd69b44c4ecd786bca1bdc366340d2459b2af4d7bb0ab317aa9669"
+  },
+  {
+    "origen": "capacitor.config.ts",
+    "destino": "Tarea_2_Actividad_5_Android/capacitor.config.ts",
+    "bytes": 201,
+    "sha256": "2c3dae7a27909b929053b0ea43951d9537764eec76f906297b1b1cc59625f850"
+  },
+  {
+    "origen": "src/app/models/producto.model.ts",
+    "destino": "Tarea_3_Actividad_7_Modelos/src/app/models/producto.model.ts",
+    "bytes": 101,
+    "sha256": "0925ae76ddaab942fbf7ef6c701398d618a5ed5d02341ff6a3bfbfa5d8af28b4"
+  },
+  {
+    "origen": "src/app/models/movimiento.model.ts",
+    "destino": "Tarea_3_Actividad_7_Modelos/src/app/models/movimiento.model.ts",
+    "bytes": 286,
+    "sha256": "a67c150eb451bb3a4936fd84fa05cfb6374b9a7e6f57b9d9c6b16809557d23b5"
+  },
+  {
+    "origen": "src/app/models/api-response.model.ts",
+    "destino": "Tarea_3_Actividad_7_Modelos/src/app/models/api-response.model.ts",
+    "bytes": 89,
+    "sha256": "729e27d964f82328e3fbb2aaa0389f17749ca613fb897e808d60976f0e3956e7"
+  },
+  {
+    "origen": "android/app/build/outputs/apk/debug/app-debug.apk",
+    "destino": "Tarea_4_Actividad_8_APK/APK/app-debug.apk",
+    "bytes": 37209423,
+    "sha256": "ef5d7f15c1b2d3b7c61cc33b72f569454a3bbddba02bf6d22e953933c0ffe746"
+  }
+]

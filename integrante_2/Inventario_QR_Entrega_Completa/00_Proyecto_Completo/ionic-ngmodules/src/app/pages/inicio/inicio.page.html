@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary"><ion-title>Mi aplicación</ion-title></ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <main>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Ionic + Angular</ion-card-subtitle>
+        <ion-card-title>Comienza tu proyecto</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Esta pantalla es el punto de partida de tu aplicación.</p>
+        <ion-input label="Tu nombre" labelPlacement="stacked" placeholder="Escribe tu nombre"
+          [(ngModel)]="nombre" maxlength="80"></ion-input>
+        <ion-button expand="block" (click)="saludar()">Probar aplicación</ion-button>
+        <p *ngIf="mensaje" role="status" class="mensaje">{{ mensaje }}</p>
+      </ion-card-content>
+    </ion-card>
+  </main>
+</ion-content>

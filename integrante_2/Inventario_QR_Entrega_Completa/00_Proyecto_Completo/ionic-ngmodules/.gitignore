@@ -1,0 +1,8 @@
+node_modules/
+.angular/
+www/
+dist/
+out-tsc/
+android/
+ios/
+*.log
