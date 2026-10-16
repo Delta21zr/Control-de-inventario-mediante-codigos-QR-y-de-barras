@@ -7,21 +7,23 @@ declare(strict_types=1);
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
 header("Access-Control-Allow-Origin: $origin");
 header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Accept, Origin");
 header("Content-Type: application/json; charset=utf-8");
 
-if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
+$method = $_SERVER['REQUEST_METHOD'] ?? '';
+
+if ($method === 'OPTIONS') {
     http_response_code(204);
     exit;
 }
 
-// Validar que el método sea exclusivamente POST
-if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
+// Solo se aceptan GET (historial) y POST (registrar movimiento)
+if ($method !== 'GET' && $method !== 'POST') {
     http_response_code(405);
     echo json_encode([
         'success' => false,
-        'error'   => 'Método no permitido. Usa POST.'
+        'error'   => 'Método no permitido. Usa GET o POST.'
     ], JSON_UNESCAPED_UNICODE);
     exit;
 }
@@ -29,7 +31,49 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
 require_once __DIR__ . '/db.php';
 
 // ==========================================================================
-// 2. LECTURA Y VALIDACIÓN DEL PAYLOAD JSON
+// 1.1 GET: HISTORIAL DE MOVIMIENTOS RECIENTES (más nuevos primero)
+// ==========================================================================
+if ($method === 'GET') {
+    try {
+        $pdo = Database::getConnection();
+
+        $stmt = $pdo->query('
+            SELECT m.id, p.codigo, p.nombre AS producto, m.tipo, m.cantidad,
+                   m.stock_antes, m.stock_despues, m.creado_en
+            FROM movimientos m
+            INNER JOIN productos p ON m.producto_id = p.id
+            ORDER BY m.creado_en DESC, m.id DESC
+            LIMIT 50
+        ');
+        $movimientos = $stmt->fetchAll();
+
+        foreach ($movimientos as &$m) {
+            $m['id']            = (int)$m['id'];
+            $m['cantidad']      = (int)$m['cantidad'];
+            $m['stock_antes']   = (int)$m['stock_antes'];
+            $m['stock_despues'] = (int)$m['stock_despues'];
+        }
+        unset($m);
+
+        http_response_code(200);
+        echo json_encode([
+            'success' => true,
+            'data'    => $movimientos
+        ], JSON_UNESCAPED_UNICODE);
+    } catch (PDOException $e) {
+        // error_log("Error al listar movimientos: " . $e->getMessage());
+
+        http_response_code(500);
+        echo json_encode([
+            'success' => false,
+            'error'   => 'Error interno al consultar el historial de movimientos'
+        ], JSON_UNESCAPED_UNICODE);
+    }
+    exit;
+}
+
+// ==========================================================================
+// 2. POST: LECTURA Y VALIDACIÓN DEL PAYLOAD JSON
 // ==========================================================================
 $rawInput = file_get_contents('php://input');
 $payload  = json_decode($rawInput ?: '', true);
@@ -72,7 +116,7 @@ $pdo = null;
 
 try {
     $pdo = Database::getConnection();
-    
+
     // Iniciar transacción
     $pdo->beginTransaction();
 
@@ -135,7 +179,10 @@ try {
     echo json_encode([
         'success' => true,
         'data'    => [
-            'nuevo_stock' => $stockDespues
+            'codigo'         => $codigo,
+            'stock_anterior' => $stockAntes,
+            'stock_actual'   => $stockDespues,
+            'nuevo_stock'    => $stockDespues // alias conservado de la versión original
         ]
     ], JSON_UNESCAPED_UNICODE);
 

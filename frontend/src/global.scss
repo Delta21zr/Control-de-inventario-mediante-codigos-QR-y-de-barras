@@ -1,0 +1,18 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+body.scanner-active {
+  background: transparent !important;
+  --ion-background-color: transparent;
+}
+
+body.scanner-active ion-app,
+body.scanner-active ion-content {
+  background: transparent !important;
+  --background: transparent;
+}

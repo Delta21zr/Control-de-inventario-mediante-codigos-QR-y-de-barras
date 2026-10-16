@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/scanner"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Historial de movimientos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cargar()" aria-label="Recargar">
+        <ion-icon slot="icon-only" name="refresh-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="refrescar($any($event))">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="estado ion-padding ion-text-center" *ngIf="cargando && movimientos.length === 0">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Cargando movimientos...</p>
+  </div>
+
+  <ion-card color="danger" *ngIf="error">
+    <ion-card-content>{{ error }}</ion-card-content>
+  </ion-card>
+
+  <div class="estado ion-padding ion-text-center" *ngIf="!cargando && !error && movimientos.length === 0">
+    <p>Aún no hay movimientos registrados.</p>
+  </div>
+
+  <ion-list *ngIf="movimientos.length > 0">
+    <ion-item *ngFor="let m of movimientos">
+      <ion-icon
+        slot="start"
+        [name]="m.tipo === 'entrada' ? 'arrow-down-circle-outline' : 'arrow-up-circle-outline'"
+        [color]="m.tipo === 'entrada' ? 'success' : 'danger'"
+      ></ion-icon>
+      <ion-label>
+        <h2>{{ m.producto }}</h2>
+        <p>
+          {{ m.tipo === 'entrada' ? 'Entrada' : 'Salida' }} de {{ m.cantidad }} u.
+          · Stock {{ m.stock_antes }} → {{ m.stock_despues }}
+        </p>
+        <p class="fecha">{{ formatearFecha(m.creado_en) }}</p>
+      </ion-label>
+      <ion-badge slot="end" [color]="m.tipo === 'entrada' ? 'success' : 'danger'">
+        {{ m.tipo === 'entrada' ? '+' : '-' }}{{ m.cantidad }}
+      </ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

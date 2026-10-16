@@ -3,6 +3,10 @@ node_modules/
 www/
 dist/
 out-tsc/
-android/
+android/.gradle/
+android/build/
+android/app/build/
 ios/
 *.log
+*.apk
+*.aab

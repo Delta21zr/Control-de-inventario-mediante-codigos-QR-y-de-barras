@@ -1,0 +1,12 @@
+node_modules/
+.angular/
+www/
+dist/
+out-tsc/
+android/.gradle/
+android/build/
+android/app/build/
+ios/
+*.log
+*.apk
+*.aab

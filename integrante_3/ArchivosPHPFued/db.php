@@ -2,14 +2,14 @@
 declare(strict_types=1);
 
 // ==========================================================================
-// CONFIGURACIÓN DE CABECERAS CORS (Ionic / Red Local)
+// CABECERAS CORS (Ionic / Red Local) Y TIPO DE CONTENIDO
 // ==========================================================================
-// Permite orígenes como http://localhost:8100, capacitor://localhost, o IPs locales
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
 header("Access-Control-Allow-Origin: $origin");
 header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Accept, Origin");
+header("Content-Type: application/json; charset=utf-8");
 
 // Manejo temprano de petición Preflight (OPTIONS)
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
@@ -19,11 +19,16 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
 
 // ==========================================================================
 // CREDENCIALES DE BASE DE DATOS
+// Valores por defecto de XAMPP. Si tu MySQL es distinto, copia
+// config.example.php a config.php (no se sube a Git) y cambia los valores.
 // ==========================================================================
-define('DB_HOST', '127.0.0.1'); // Usa 127.0.0.1 en lugar de 'localhost' para evitar resolución DNS lenta en PDO
-define('DB_NAME', 'nombre_de_tu_bd');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+if (is_file(__DIR__ . '/config.php')) {
+    require_once __DIR__ . '/config.php';
+}
+defined('DB_HOST') || define('DB_HOST', '127.0.0.1'); // 127.0.0.1 evita resolución DNS lenta en PDO
+defined('DB_NAME') || define('DB_NAME', 'reto_inventario_qr');
+defined('DB_USER') || define('DB_USER', 'root');
+defined('DB_PASS') || define('DB_PASS', '');
 
 // ==========================================================================
 // CLASE DE CONEXIÓN PDO
@@ -37,7 +42,7 @@ final class Database
 
     /**
      * Retorna una instancia activa de PDO.
-     * 
+     *
      * @return PDO
      * @throws PDOException Si ocurre un error al conectar.
      */

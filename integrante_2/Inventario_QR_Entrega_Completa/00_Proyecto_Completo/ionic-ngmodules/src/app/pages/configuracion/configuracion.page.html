@@ -1,0 +1,74 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/scanner"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuración de API</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title class="ion-text-wrap" style="font-size: 1rem; font-weight: bold;">
+        <ion-icon name="warning-outline" style="vertical-align: middle; margin-right: 6px;"></ion-icon>
+        Atención con la red
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      No usar <strong>localhost</strong> ni <strong>127.0.0.1</strong>. Ingresa la IP de la laptop conectada a la
+      misma red Wi-Fi.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-input
+    class="ion-margin-top"
+    fill="outline"
+    label="URL base del backend"
+    labelPlacement="stacked"
+    type="url"
+    placeholder="http://192.168.1.75/inventario-qr/api"
+    [(ngModel)]="baseUrl"
+    [clearInput]="true"
+  ></ion-input>
+
+  <div class="ion-margin-top">
+    <ion-button expand="block" fill="outline" color="tertiary" (click)="testConnection()">
+      <ion-icon slot="start" name="pulse-outline"></ion-icon>
+      Probar conexión
+    </ion-button>
+
+    <ion-button expand="block" color="success" class="ion-margin-top" (click)="saveConfig()">
+      <ion-icon slot="start" name="save-outline"></ion-icon>
+      Guardar configuración
+    </ion-button>
+  </div>
+
+  <div *ngIf="connectionSuccess !== null" class="ion-margin-top">
+    <ion-card color="success" *ngIf="connectionSuccess">
+      <ion-card-header>
+        <ion-card-title style="font-size: 1.1rem;">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          Conexión exitosa
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Estado:</strong> {{ statusMessage }}</p>
+        <p><strong>Versión PHP:</strong> {{ phpVersion }}</p>
+        <p><strong>MySQL:</strong> {{ mysqlStatus }}</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="danger" *ngIf="!connectionSuccess">
+      <ion-card-header>
+        <ion-card-title style="font-size: 1.1rem;">
+          <ion-icon name="close-circle-outline"></ion-icon>
+          Error de conexión
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ statusMessage }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="volverAlEscaner()" aria-label="Volver al escáner">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Detalle del Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ng-container *ngIf="producto">
+    <!-- Tarjeta con información del producto -->
+    <ion-card class="ion-no-margin ion-margin-bottom">
+      <ion-card-header>
+        <div class="header-container">
+          <div>
+            <ion-card-subtitle>{{ producto.codigo }}</ion-card-subtitle>
+            <ion-card-title>{{ producto.nombre }}</ion-card-title>
+          </div>
+          <ion-badge [color]="getBadgeColor()" class="stock-badge">
+            <small>Stock</small>
+            <h2>{{ producto.stock }}</h2>
+          </ion-badge>
+        </div>
+      </ion-card-header>
+    </ion-card>
+
+    <!-- Tipo de movimiento -->
+    <ion-segment [(ngModel)]="tipoSeleccionado" class="ion-margin-bottom">
+      <ion-segment-button value="entrada">
+        <ion-label>Entrada</ion-label>
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="salida">
+        <ion-label>Salida</ion-label>
+        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+
+    <!-- Cantidad -->
+    <ion-input
+      class="ion-margin-bottom"
+      fill="outline"
+      label="Cantidad"
+      labelPlacement="floating"
+      type="number"
+      inputmode="numeric"
+      min="1"
+      step="1"
+      placeholder="0"
+      [(ngModel)]="cantidad"
+      [disabled]="cargando"
+    ></ion-input>
+
+    <ion-button
+      expand="block"
+      [color]="tipoSeleccionado === 'entrada' ? 'success' : 'danger'"
+      [disabled]="cargando || !esCantidadValida()"
+      (click)="confirmarMovimiento()"
+    >
+      <ion-spinner *ngIf="cargando" name="crescent"></ion-spinner>
+      <span *ngIf="!cargando">Confirmar Movimiento</span>
+    </ion-button>
+
+    <ion-button expand="block" fill="clear" class="ion-margin-top" (click)="irAlHistorial()">
+      Ver historial de movimientos
+    </ion-button>
+  </ng-container>
+</ion-content>

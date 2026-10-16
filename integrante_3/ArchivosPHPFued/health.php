@@ -23,7 +23,7 @@ require_once __DIR__ . '/db.php';
 // ==========================================================================
 try {
     $pdo = Database::getConnection();
-    
+
     // Ping real al motor de base de datos
     $pdo->query('SELECT 1');
 
@@ -40,7 +40,6 @@ try {
     ], JSON_UNESCAPED_UNICODE);
 
 } catch (PDOException $e) {
-    // Opcional: Registrar el error técnico real en el log del servidor sin exponerlo al cliente
     // error_log("Error de conexión en health.php: " . $e->getMessage());
 
     http_response_code(503);
