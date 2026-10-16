@@ -3,7 +3,7 @@ import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 import { ApiResponse } from '../models/api-response.model';
 
 const BASE_URL_KEY = 'api_base_url';
-const DEFAULT_BASE_URL = 'http://192.168.1.75/inventario-qr/api';
+const DEFAULT_BASE_URL = 'http://192.168.1.144/inventario-qr/api';
 
 /**
  * Servicio centralizado de Axios.
