@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Ionic NgModules</string>
-    <string name="title_activity_main">Ionic NgModules</string>
+    <string name="app_name">Inventario QR</string>
+    <string name="title_activity_main">Inventario QR</string>
     <string name="package_name">com.example.ionicngmodules</string>
     <string name="custom_url_scheme">com.example.ionicngmodules</string>
 </resources>
