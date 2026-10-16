@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="volverAlEscaner()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Detalle del Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Tarjeta con Información del Producto -->
+  <ion-card class="ion-no-margin ion-margin-bottom">
+    <ion-card-header>
+      <div class="header-container">
+        <div>
+          <ion-card-subtitle>{{ producto.codigo }}</ion-card-subtitle>
+          <ion-card-title>{{ producto.nombre }}</ion-card-title>
+        </div>
+        <!-- Badge de Stock Grande -->
+        <ion-badge [color]="getBadgeColor()" class="stock-badge">
+          <small>Stock</small>
+          <h2>{{ producto.stock_actual }}</h2>
+        </ion-badge>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- Selector Tipo de Movimiento -->
+  <ion-segment [(ngModel)]="tipoSeleccionado" class="ion-margin-bottom">
+    <ion-segment-button value="Entrada" color="success">
+      <ion-label>Entrada</ion-label>
+      <ion-icon name="arrow-down-circle-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="Salida" color="danger">
+      <ion-label>Salida</ion-label>
+      <ion-icon name="arrow-up-circle-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- Campo de Entrada de Cantidad -->
+  <ion-item fill="outline" class="ion-margin-bottom">
+    <ion-label position="floating">Cantidad</ion-label>
+    <ion-input 
+      type="number" 
+      min="1" 
+      step="1" 
+      [(ngModel)]="cantidad" 
+      placeholder="0"
+      [disabled]="cargando">
+    </ion-input>
+  </ion-item>
+
+  <!-- Botón Confirmar Movimiento -->
+  <ion-button 
+    expand="block" 
+    [color]="tipoSeleccionado === 'Entrada' ? 'success' : 'danger'"
+    [disabled]="cargando || !cantidad || cantidad <= 0"
+    (click)="confirmarMovimiento()">
+    <ion-spinner *ngIf="cargando" name="crescent"></ion-spinner>
+    <span *ngIf="!cargando">Confirmar Movimiento</span>
+  </ion-button>
+
+</ion-content>

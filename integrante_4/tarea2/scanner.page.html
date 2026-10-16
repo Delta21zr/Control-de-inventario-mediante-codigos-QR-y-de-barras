@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title>Control de Inventario QR</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="irAHistorial()" aria-label="Historial">
+        <ion-icon slot="icon-only" name="time-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="irAConfiguracion()" aria-label="Configuración">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+  <div class="scanner-container">
+    
+    <!-- Botón Principal de Escaneo -->
+    <div class="action-wrapper">
+      <ion-button 
+        expand="block" 
+        size="large" 
+        color="primary" 
+        class="scan-button" 
+        (click)="onStartScan()">
+        <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+        Escanear Código QR / Barras
+      </ion-button>
+    </div>
+
+    <!-- Tarjeta de Instrucciones -->
+    <ion-card class="info-card ion-margin-top">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="information-circle-outline" color="primary"></ion-icon>
+          Instrucciones de Lectura
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="ion-text-center">
+          Asegúrate de enfocar correctamente el código dentro del recuadro, mantener el dispositivo firme y contar con buena iluminación.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
