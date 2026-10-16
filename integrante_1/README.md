@@ -58,10 +58,10 @@ Para garantizar la compatibilidad y evitar errores de compilación, asegúrate d
 
 1. Conecta tu computadora y el dispositivo Android a la **misma red Wi-Fi**.
 2. Encuentra la IP local de tu computadora:
-   * **Windows:** Abre CMD y ejecuta `ipconfig`. Busca la "Dirección IPv4" (ej. `192.168.1.75`).
+   * **Windows:** Abre CMD y ejecuta `ipconfig`. Busca la "Dirección IPv4" (ej. `192.168.1.144`).
    * **Mac/Linux:** Abre la terminal y ejecuta `ifconfig` o `ip a`.
 3. En la aplicación móvil (Pantalla de Configuración), deberás ingresar esta URL base:
-   👉 `http://192.168.1.75/inventario-qr/api/`
+   👉 `http://192.168.1.144/inventario-qr/api/`
 
 ---
 
@@ -110,14 +110,14 @@ El plugin de escáner requiere configuraciones específicas en Android. Sigue es
 
 ## 8. Verificación Rápida de Endpoints (Pruebas API)
 
-Usa estos comandos `curl` desde tu terminal para asegurar que el backend expone los datos correctamente antes de probar la app. *(Reemplaza `192.168.1.75` con tu IP LAN).*
+Usa estos comandos `curl` desde tu terminal para asegurar que el backend expone los datos correctamente antes de probar la app. *(Reemplaza `192.168.1.144` con tu IP LAN).*
 
 | Endpoint | Comando cURL de Prueba | Respuesta Esperada (HTTP 200) |
 | :--- | :--- | :--- |
-| **Health Check** | `curl -X GET http://192.168.1.75/inventario-qr/api/health.php` | `{"success":true,"data":{"php":"8.2","mysql":"ok"}}` |
-| **Listar Productos** | `curl -X GET http://192.168.1.75/inventario-qr/api/productos.php` | `{"success":true,"data":[{"id":1,"codigo":"PRD001"...}]}` |
-| **Buscar Producto** | `curl -X GET http://192.168.1.75/inventario-qr/api/productos.php?codigo=PRD001` | `{"success":true,"data":{"id":1,"codigo":"PRD001","stock":10}}` |
-| **Registrar Entrada** | `curl -X POST -H "Content-Type: application/json" -d "{\"codigo\":\"PRD001\",\"tipo\":\"entrada\",\"cantidad\":2}" http://192.168.1.75/inventario-qr/api/movimientos.php` | `{"success":true,"data":{"stock_actual":12}}` |
-| **Listar Historial** | `curl -X GET http://192.168.1.75/inventario-qr/api/movimientos.php` | `{"success":true,"data":[{"producto":"Mouse...","tipo":"entrada"...}]}` |
+| **Health Check** | `curl -X GET http://192.168.1.144/inventario-qr/api/health.php` | `{"success":true,"data":{"php":"8.2","mysql":"ok"}}` |
+| **Listar Productos** | `curl -X GET http://192.168.1.144/inventario-qr/api/productos.php` | `{"success":true,"data":[{"id":1,"codigo":"PRD001"...}]}` |
+| **Buscar Producto** | `curl -X GET http://192.168.1.144/inventario-qr/api/productos.php?codigo=PRD001` | `{"success":true,"data":{"id":1,"codigo":"PRD001","stock":10}}` |
+| **Registrar Entrada** | `curl -X POST -H "Content-Type: application/json" -d "{\"codigo\":\"PRD001\",\"tipo\":\"entrada\",\"cantidad\":2}" http://192.168.1.144/inventario-qr/api/movimientos.php` | `{"success":true,"data":{"stock_actual":12}}` |
+| **Listar Historial** | `curl -X GET http://192.168.1.144/inventario-qr/api/movimientos.php` | `{"success":true,"data":[{"producto":"Mouse...","tipo":"entrada"...}]}` |
 
 > **Nota de Pruebas:** Para simular un error (P04: Sobregiro de stock), envía un POST con `"tipo":"salida"` y una `"cantidad"` mayor al stock actual. El servidor debe responder con HTTP 400.
